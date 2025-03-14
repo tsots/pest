@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!assets/).*)",
-      "destination": "/api/ssr.js"
+      "src": "/[^.]+",
+      "dest": "/",
+      "status": 200
     }
   ]
 }
